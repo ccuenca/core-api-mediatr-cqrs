@@ -1,0 +1,11 @@
+/Users/cristhian/SourceCode/dotnet-workspace/TestMediaTR/obj/Debug/netcoreapp2.0/TestMediaTR.csprojResolveAssemblyReference.cache
+/Users/cristhian/SourceCode/dotnet-workspace/TestMediaTR/obj/Debug/netcoreapp2.0/TestMediaTR.csproj.CoreCompileInputs.cache
+/Users/cristhian/SourceCode/dotnet-workspace/TestMediaTR/obj/Debug/netcoreapp2.0/TestMediaTR.AssemblyInfoInputs.cache
+/Users/cristhian/SourceCode/dotnet-workspace/TestMediaTR/obj/Debug/netcoreapp2.0/TestMediaTR.AssemblyInfo.cs
+/Users/cristhian/SourceCode/dotnet-workspace/TestMediaTR/bin/Debug/netcoreapp2.0/TestMediaTR.deps.json
+/Users/cristhian/SourceCode/dotnet-workspace/TestMediaTR/bin/Debug/netcoreapp2.0/TestMediaTR.runtimeconfig.json
+/Users/cristhian/SourceCode/dotnet-workspace/TestMediaTR/bin/Debug/netcoreapp2.0/TestMediaTR.runtimeconfig.dev.json
+/Users/cristhian/SourceCode/dotnet-workspace/TestMediaTR/bin/Debug/netcoreapp2.0/TestMediaTR.dll
+/Users/cristhian/SourceCode/dotnet-workspace/TestMediaTR/bin/Debug/netcoreapp2.0/TestMediaTR.pdb
+/Users/cristhian/SourceCode/dotnet-workspace/TestMediaTR/obj/Debug/netcoreapp2.0/TestMediaTR.dll
+/Users/cristhian/SourceCode/dotnet-workspace/TestMediaTR/obj/Debug/netcoreapp2.0/TestMediaTR.pdb
