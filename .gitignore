@@ -1,0 +1,4 @@
+/bin
+/obj
+npm-debug.log
+.DS_Store
