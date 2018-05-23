@@ -9,3 +9,14 @@
 /Users/cristhian/SourceCode/dotnet-workspace/TestMediaTR/bin/Debug/netcoreapp2.0/TestMediaTR.pdb
 /Users/cristhian/SourceCode/dotnet-workspace/TestMediaTR/obj/Debug/netcoreapp2.0/TestMediaTR.dll
 /Users/cristhian/SourceCode/dotnet-workspace/TestMediaTR/obj/Debug/netcoreapp2.0/TestMediaTR.pdb
+D:\Source Code\dotnet-workspace\core-api-mediatr-cqrs\bin\Debug\netcoreapp2.0\TestMediaTR.deps.json
+D:\Source Code\dotnet-workspace\core-api-mediatr-cqrs\bin\Debug\netcoreapp2.0\TestMediaTR.runtimeconfig.json
+D:\Source Code\dotnet-workspace\core-api-mediatr-cqrs\bin\Debug\netcoreapp2.0\TestMediaTR.runtimeconfig.dev.json
+D:\Source Code\dotnet-workspace\core-api-mediatr-cqrs\bin\Debug\netcoreapp2.0\TestMediaTR.dll
+D:\Source Code\dotnet-workspace\core-api-mediatr-cqrs\bin\Debug\netcoreapp2.0\TestMediaTR.pdb
+D:\Source Code\dotnet-workspace\core-api-mediatr-cqrs\obj\Debug\netcoreapp2.0\TestMediaTR.csprojAssemblyReference.cache
+D:\Source Code\dotnet-workspace\core-api-mediatr-cqrs\obj\Debug\netcoreapp2.0\TestMediaTR.csproj.CoreCompileInputs.cache
+D:\Source Code\dotnet-workspace\core-api-mediatr-cqrs\obj\Debug\netcoreapp2.0\TestMediaTR.AssemblyInfoInputs.cache
+D:\Source Code\dotnet-workspace\core-api-mediatr-cqrs\obj\Debug\netcoreapp2.0\TestMediaTR.AssemblyInfo.cs
+D:\Source Code\dotnet-workspace\core-api-mediatr-cqrs\obj\Debug\netcoreapp2.0\TestMediaTR.dll
+D:\Source Code\dotnet-workspace\core-api-mediatr-cqrs\obj\Debug\netcoreapp2.0\TestMediaTR.pdb

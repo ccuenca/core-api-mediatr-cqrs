@@ -21,6 +21,11 @@ namespace TestMediaTR.Controllers
         public async Task<IActionResult> Create([
             FromBody] CreateUpdateConceptosCommand command, CancellationToken cancellationToken)
         {
+            if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             var commandResult = await _mediator.Send(command, cancellationToken);
 
             if(commandResult.IsSuccess) {

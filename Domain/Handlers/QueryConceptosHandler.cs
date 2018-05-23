@@ -1,12 +1,12 @@
+using AutoMapper;
+using MediatR;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Threading;
 using System.Threading.Tasks;
-using AutoMapper;
-using MediatR;
-using Microsoft.EntityFrameworkCore;
 using TestMediaTR.Domain.Commands;
 using TestMediaTR.DTOs;
 using TestMediaTR.Persistence;
@@ -24,14 +24,14 @@ namespace TestMediaTR.Domain.Handlers
         {
             this._dbContext = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
             this._mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
-        }    
+        }
 
-        public async Task<CommandResult> Handle(QueryConceptosCommand request, 
-                                            CancellationToken cancellationToken)
+        public async Task<CommandResult> Handle(QueryConceptosCommand request, CancellationToken cancellationToken)
         {
             try
             {
-                if (request.Id == 0){
+                if (request.Id == 0)
+                {
                     return CommandResult.Success(
                         data: _mapper.Map<List<PrcConceptos_Model>, List<ConceptoDTO>>(await LoadByType(request.Type))
                     );
@@ -52,8 +52,8 @@ namespace TestMediaTR.Domain.Handlers
         #region "Data Access Methods"
         private async Task<List<PrcConceptos_Model>> LoadByType(string type)
         {
-            var parameters = new SqlParameter[] 
-            { 
+            var parameters = new SqlParameter[]
+            {
                 Parameters.CreateParameter("@TIPO", type, ParameterDirection.Input, SqlDbType.VarChar)
             };
 
@@ -62,8 +62,8 @@ namespace TestMediaTR.Domain.Handlers
 
         private async Task<PrcConceptos_Model> LoadById(int id)
         {
-            var parameters = new SqlParameter[] 
-            { 
+            var parameters = new SqlParameter[]
+            {
                 Parameters.CreateParameter("@ID", id, ParameterDirection.Input, SqlDbType.Int)
             };
 

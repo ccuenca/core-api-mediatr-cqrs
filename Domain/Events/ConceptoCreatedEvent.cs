@@ -1,12 +1,9 @@
-﻿using System;
-namespace TestMediaTR.DTOs
-{
-    public class ConceptoDTO
-    {
-        public ConceptoDTO()
-        {
-        }
+﻿using Newtonsoft.Json;
 
+namespace TestMediaTR.Domain.Events
+{
+    public class ConceptoCreatedEvent : BaseEvent
+    {
         public int Id { get; set; }
 
         public string Codigo { get; set; }
@@ -16,5 +13,10 @@ namespace TestMediaTR.DTOs
         public string Tipo { get; set; }
 
         public string Parametro { get; set; }
+
+        public string ToJson()
+        {
+            return JsonConvert.SerializeObject(this);
+        }
     }
 }

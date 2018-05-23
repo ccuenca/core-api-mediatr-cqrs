@@ -1,16 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using AutoMapper;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using TestMediaTR.Domain.Commands;
+using TestMediaTR.Domain.Events;
 using TestMediaTR.Persistence;
-using AutoMapper;
-using MediatR;
+using TestMediaTR.Support;
+using TestMediaTR.Support.Converter;
 
 namespace TestMediaTR
 {
@@ -25,13 +26,28 @@ namespace TestMediaTR
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ConceptosContext>(
-                options => options.UseSqlServer(_conf.GetConnectionString("Db")));
 
-            services.AddMvc();
+            services.AddDbContext<ConceptosContext>(options => options.UseSqlServer(_conf.GetConnectionString("Db")));
+
+            services.Configure<AmqpOptions>(_conf.GetSection("amqp"));
+
+            services.AddMediatR();
+
+            services.AddTransient<IValidator<CreateUpdateConceptosCommand>, CreateUpdateConceptoCommandValidator>();
+            services.AddTransient<ICommandEventConverter, CommandEventConverter>();
+
+            //Se usa singleton por que la conexión es muy costosa
+            services.AddSingleton<IEventEmitter, AmqpEventEmitter>();
+
+            
+            services.AddMediatR();
+
             services.AddAutoMapper();
             services.AddCors();
-            services.AddMediatR();
+            
+
+            services.AddMvc()
+                    .AddFluentValidation();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
