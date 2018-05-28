@@ -1,0 +1,12 @@
+2018-05-25 16:12:11.958 -05:00 [Information] Starting web Host.
+2018-05-25 16:54:57.831 -05:00 [Information] Starting web Host.
+2018-05-25 17:02:16.919 -05:00 [Information] Starting web Host.
+2018-05-25 17:02:18.915 -05:00 [Information] Concepto creado ConceptoDTO { Id: 0, Codigo: "81", Nombre: "Telefono Fijo 81", Tipo: "TT", Parametro: "0" }
+2018-05-25 17:05:36.358 -05:00 [Information] Amqp option AmqpOptions { UserName: "agtvrdic", Password: "tpSnQ0UfQlWVrl6ilyvru3X2QTm5DPHZ", HostName: "agtvrdic", Uri: "amqp://agtvrdic:tpSnQ0UfQlWVrl6ilyvru3X2QTm5DPHZ@buffalo.rmq.cloudamqp.com/agtvrdic", VirtualHost: "agtvrdic" }
+2018-05-25 17:05:56.647 -05:00 [Error] Mensaje de error 05/25/2018 17:05:56
+System.Exception: Mensaje
+   at TestMediaTR.Controllers.TestController.GetError() in D:\Source Code\dotnet-workspace\core-api-mediatr-cqrs\Controllers\TestController.cs:line 34
+2018-05-25 17:20:24.732 -05:00 [Information] Concepto creado ConceptoDTO { Id: 0, Codigo: "82", Nombre: "Telefono Fijo 82", Tipo: "TT", Parametro: "0" }
+2018-05-25 17:21:19.179 -05:00 [Information] Concepto creado ConceptoDTO { Id: 0, Codigo: "83", Nombre: "Telefono Fijo 83", Tipo: "TT", Parametro: "0" }
+2018-05-25 17:23:52.071 -05:00 [Information] Concepto creado ConceptoDTO { Id: 0, Codigo: "84", Nombre: "Telefono Fijo 84", Tipo: "TT", Parametro: "0" }
+2018-05-25 17:31:07.543 -05:00 [Information] Concepto creado ConceptoDTO { Id: 0, Codigo: "85", Nombre: "Telefono Fijo 85", Tipo: "TT", Parametro: "0" }

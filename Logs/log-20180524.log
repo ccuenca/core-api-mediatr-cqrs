@@ -1,0 +1,9 @@
+2018-05-24 17:18:12.780 -05:00 [Information] Starting web Host.
+2018-05-24 17:21:38.753 -05:00 [Information] Starting web Host.
+2018-05-24 17:22:46.649 -05:00 [Information] Starting web Host.
+2018-05-24 17:57:46.942 -05:00 [Information] Starting web Host.
+2018-05-24 17:58:10.714 -05:00 [Error] Mensaje de error 05/24/2018 17:58:10
+System.Exception: Mensaje
+   at TestMediaTR.Controllers.TestController.GetError() in D:\Source Code\dotnet-workspace\core-api-mediatr-cqrs\Controllers\TestController.cs:line 34
+2018-05-24 18:03:54.094 -05:00 [Information] Starting web Host.
+2018-05-24 18:04:30.959 -05:00 [Information] Amqp option AmqpOptions { UserName: "agtvrdic", Password: "tpSnQ0UfQlWVrl6ilyvru3X2QTm5DPHZ", HostName: "agtvrdic", Uri: "amqp://agtvrdic:tpSnQ0UfQlWVrl6ilyvru3X2QTm5DPHZ@buffalo.rmq.cloudamqp.com/agtvrdic", VirtualHost: "agtvrdic" }

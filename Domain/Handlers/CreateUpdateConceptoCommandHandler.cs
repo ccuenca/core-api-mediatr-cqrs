@@ -1,5 +1,6 @@
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 using System;
 using System.Data;
 using System.Data.SqlClient;
@@ -33,6 +34,8 @@ namespace TestMediaTR.Domain.Handlers
             try
             {
                 int Id = await CreateConcepto(request.Concepto, cancellationToken);
+
+                Log.Information("Concepto creado {@concepto}", request.Concepto);
 
                 _eventEmitter.EmitConceptoCreatedEvent(_converter.CommandToEvent(request));
 

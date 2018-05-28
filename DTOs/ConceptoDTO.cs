@@ -6,7 +6,7 @@ namespace TestMediaTR.DTOs
         public ConceptoDTO()
         {
         }
-
+        
         public int Id { get; set; }
 
         public string Codigo { get; set; }
